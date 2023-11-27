@@ -19,4 +19,44 @@ public class Main {
          * This is a new way to write a comment
          * Use a /* */
 	}
+
+    // Variable is a placeholder for information
+    // Boolean 1 bit 2 values (True or False)
+    // Byte 1 byte
+    // Short 2 bytes
+    // Int 2 Bytes (PRIMITIVE)
+    // Long 8 bytes
+
+    // Float 4 bytes (Stores fractional values)
+    // Double 8 bytes (PRIMITIVE)
+    // Char 2 bytes (PRIMITIVE)
+    // String Varies (REFERENCE)
+
+    // What's the difference between primitive and reference?
+
+    /*
+     * Primitive 8 types
+     *  Uses less memory
+     * 
+     * Reference types - store an address
+     *  Uses more memory
+     */
+
+     // Precede the variable with the data type folloewd by the ;
+
+    //  int x // declaration
+
+    //  x = 123 // assignment
+
+    //  int x = 123 // initialization
+}
+
+public class Main {
+    public static void main(string[] args){
+        // int x; // declaration
+
+        // x = 123; // assignment
+
+        int x = 123; // initialization
+    }
 }
