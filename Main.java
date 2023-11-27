@@ -12,7 +12,11 @@ public class Main {
 	public static void main(String[] args) {
 		// System.out.print("Hello World!\n"); 
         // Escape sequence characer is \n
-        System.out.print("\"I love pizza!\"");
-        System.out.println("Hi!");
+        // System.out.print("\"I love pizza!\"");
+        // System.out.println("Hi!");
+
+        /* Multi-line comment
+         * This is a new way to write a comment
+         * Use a /* */
 	}
 }
