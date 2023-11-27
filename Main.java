@@ -55,20 +55,54 @@
 //     }
 // }
 
+// public class Main {
+//     public static void main(String[] args) {
+//         int x = 123; // Largest # we can use is just ovet 2 billion; cannot store a decimal
+//         long y = 123841824812841L; // Have to follow with an L
+//         double z = 3.14;
+//         boolean a = false;
+//         char symbol = '@';
+//         String name = "Bruh"; // Anything that is a reference data type starts with a capitol
+
+//         System.out.println("My number is: "+x);
+//         System.out.println("My other number is "+y);
+//         System.out.println("My final number is "+z);
+//         System.out.println(a);
+//         System.out.println(symbol);
+//         System.out.println("Hello "+name);
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+//         String x = "water";
+//         String y = "Kool-Aid";
+//         String temp; // Temporary container to store additional values
+
+//         temp = x; // Tempt = water
+//         x=y; // x = kool-aid
+//         y =temp; // y = water
+//         // x is now kool-aid while y is now water
+
+//         System.out.println("x: "+x);
+//         System.out.println("y: "+y);
+//     }
+// }
+
 public class Main {
     public static void main(String[] args) {
-        int x = 123; // Largest # we can use is just ovet 2 billion; cannot store a decimal
-        long y = 123841824812841L; // Have to follow with an L
-        double z = 3.14;
-        boolean a = false;
-        char symbol = '@';
-        String name = "Bruh"; // ANything that is a reference data type starts with a capitol
+        String x = "Pizza is the best!";
 
-        System.out.println("My number is: "+x);
-        System.out.println("My other number is "+y);
-        System.out.println("My final number is "+z);
-        System.out.println(a);
-        System.out.println(symbol);
-        System.out.println("Hello "+name);
+        String y = "Steak is the better option...";
+
+        String temp;
+
+        temp = x;
+        x = y;
+        y = temp;
+
+        System.out.println("This is x: "+x);
+
+        System.out.println("This is y: "+y);
     }
 }
