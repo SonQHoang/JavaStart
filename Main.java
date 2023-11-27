@@ -138,18 +138,36 @@
  * Operands are values, variables, numbers and quantity
  */
 
- public class Main {
+//  public class Main {
+//     public static void main(String[] args) {
+//         double friends = 11;
+
+//         // friends = friends % 2; Basic method
+//         // friends++; //shorthand is the same as JS
+
+//         // With integer division we truncate decimal portions
+//         // We can resolve this by casting values as a double or float
+
+//         friends = (double) friends / 3;
+
+//         System.out.println(friends);
+//     }
+//  }
+
+// Making a GUI (Graphical User Interface) application
+
+import javax.swing.JOptionPane; // What is this?
+
+public class Main {
     public static void main(String[] args) {
-        double friends = 11;
 
-        // friends = friends % 2; Basic method
-        // friends++; //shorthand is the same as JS
+        String name = JOptionPane.showInputDialog("Enter your name"); // showInputDialog returns a string
+        JOptionPane.showMessageDialog(null, "Hello "+ name); // Displays information
 
-        // With integer division we truncate decimal portions
-        // We can resolve this by casting values as a double or float
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
 
-        friends = (double) friends / 3;
-
-        System.out.println(friends);
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+        JOptionPane.showMessageDialog(null, "You are " + height + " cm tall.");
     }
- }
+}
