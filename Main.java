@@ -156,18 +156,60 @@
 
 // Making a GUI (Graphical User Interface) application
 
-import javax.swing.JOptionPane; // What is this?
+// import javax.swing.JOptionPane; // What is this?
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         String name = JOptionPane.showInputDialog("Enter your name"); // showInputDialog returns a string
+//         JOptionPane.showMessageDialog(null, "Hello "+ name); // Displays information
+
+//         int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+//         JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
+
+//         double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+//         JOptionPane.showMessageDialog(null, "You are " + height + " cm tall.");
+//     }
+// }
+
+// Useful methods of the math class
+// Goal is to find the hypotenuse of a triangle
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        String name = JOptionPane.showInputDialog("Enter your name"); // showInputDialog returns a string
-        JOptionPane.showMessageDialog(null, "Hello "+ name); // Displays information
+        double x;
+        double y;
+        double z;
 
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-        JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
+        Scanner scanner = new Scanner(System.in);
 
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
-        JOptionPane.showMessageDialog(null, "You are " + height + " cm tall.");
+        System.out.println("enter side x: ");
+        x = scanner.nextDouble();
+
+           System.out.println("enter side y: ");
+        y = scanner.nextDouble();
+
+        z = Math.sqrt((x*x) + (y*y));
+
+        System.out.println("The hypotenuse is: " + z);
+
+        scanner.close();
+       
+        // double x = 3.14;
+        // double y = 10;
+
+        // double z = Math.max(x, y);
+        // double z = Math.min(x, y);
+
+        // double z = Math.abs(y); // Absolute value finder
+        // double z = Math.sqrt(y); // Finding the square root
+
+        // double z = Math.ceil(x, y); // Rounding up
+        // double z = Math.ceil(x, y); // Rounding down
+
+        // System.out.println("This number is larger: "+ z);
     }
 }
