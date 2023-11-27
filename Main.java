@@ -106,23 +106,50 @@
 //         System.out.println("This is y: "+y);
 //     }
 // }
-import java.util.Scanner; // Importing the scanner class
 
-public class Main {
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in); //Utilizing scanner to have user input
+// import java.util.Scanner; // Importing the scanner class from the util package
 
-        System.out.println("What is your name? ");
-        String name = scanner.nextLine(); // Part of scanner
-        System.out.println("How old are you? ");
-        int age = scanner.nextInt();
-        scanner.nextLine(); // clears the scanner;
-        System.out.println("What is your favorite food?");
-        String food = scanner.nextLine();
+// // What is a scanner? 
+
+// public class Main {
+//     public static void main(String[] args){
+//         Scanner scanner = new Scanner(System.in); //Utilizing scanner to have user input
+
+//         System.out.println("What is your name? ");
+//         String name = scanner.nextLine(); // Part of scanner
+//         System.out.println("How old are you? ");
+//         int age = scanner.nextInt();
+//         scanner.nextLine(); // clears the scanner;
+//         System.out.println("What is your favorite food?");
+//         String food = scanner.nextLine();
 
 
-        System.out.println("Hello " + name);
-        System.out.println("You are "+age+ " years old");
-        System.out.println("You like " + food);
+//         System.out.println("Hello " + name);
+//         System.out.println("You are "+age+ " years old");
+//         System.out.println("You like " + food);
+//     }
+// }
+
+
+/* Intro to Expressions
+ * 
+ * Combination of operands and operators
+ *  Operators are mathematical symbols
+ * Operands are values, variables, numbers and quantity
+ */
+
+ public class Main {
+    public static void main(String[] args) {
+        double friends = 11;
+
+        // friends = friends % 2; Basic method
+        // friends++; //shorthand is the same as JS
+
+        // With integer division we truncate decimal portions
+        // We can resolve this by casting values as a double or float
+
+        friends = (double) friends / 3;
+
+        System.out.println(friends);
     }
-}
+ }
